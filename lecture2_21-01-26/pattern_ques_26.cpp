@@ -11,7 +11,7 @@ int main(){
             cout<<" "<<k<<" ";
         }
         for(int k=1;k>=2;k--){
-            cout<<" "<<k+i<<" ";
+            cout<<" "<<k<<" ";
         }
         cout<<endl;
 
