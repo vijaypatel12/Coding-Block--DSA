@@ -6,7 +6,7 @@ int main(){
     cin>>n;
     while(n>0){
         int digit=n%10;
-        inv+=posi*pow(10,digit-1);
+        inv+=posi*pow(10,digit()-1);
         posi++;
         n/=10;
     }
