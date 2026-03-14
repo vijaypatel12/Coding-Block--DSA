@@ -37,19 +37,16 @@ int main() {
 
     for (int i = 0; i < totalRows; i++) {
         int val = (i <= N) ? i : totalRows - i - 1;
-
-        // Left decreasing numbers
         for (int j = N; j >= N - val; j--) {
             cout << j << " ";
         }
 
-        // Middle spaces
+        
         int spaces = (N - val) * 2 - 1;
         for (int s = 0; s < spaces; s++) {
             cout << "  ";
         }
 
-        // Right increasing numbers (avoid duplicate middle)
         if (val != 0) {
             for (int j = N - val; j <= N; j++) {
                 cout << j << " ";
